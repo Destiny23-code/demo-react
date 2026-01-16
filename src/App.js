@@ -1,7 +1,7 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 
-function App() {
+/*function App() {
   return (
     <div className="App">
       <header className="App-header">
@@ -22,4 +22,31 @@ function App() {
   );
 }
 
+export default App;*/
+
+//Demo ES6
+const name = "React";
+//tạo arrow function
+const sayHello = () => {
+  return `Hello, ${name}!`;
+}
+
+//Demo JSX
+function App() {
+  return (
+    <div>
+      {/*Create JSX element*/}
+      <h3>Welcome to {name} Application</h3>
+
+      {/*Using JavaScript expression inside JSX*/}
+      <p>{sayHello()}</p> 
+
+      {/*Redndering HTML elements using JSX*/}
+      <p>This is a paragraph element.</p>
+
+    </div>
+  );
+}
+
+//Demo Fragment: thay vì dùng <div> bao quanh thì dùng <></> để tránh tạo thêm node thừa trong DOM
 export default App;
